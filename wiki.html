@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Eldoria: Game Compendium</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+        .container {
+            max-width: 1000px;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 0.5rem; /* rounded-lg */
+            overflow: hidden; /* Ensures rounded corners apply to content */
+        }
+        th, td {
+            padding: 0.75rem 1rem; /* py-3 px-4 */
+            text-align: left;
+            border-bottom: 1px solid #4a5568; /* border-gray-700 */
+        }
+        th {
+            background-color: #2d3748; /* bg-gray-700 */
+            font-weight: bold;
+            color: #cbd5e0; /* text-gray-300 */
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:nth-child(even) {
+            background-color: #2a3340; /* Slightly different background for even rows */
+        }
+        tr:hover {
+            background-color: #3b4554; /* Hover effect */
+        }
+        h1, h2, h3 {
+            color: #a0aec0; /* Lighter headings */
+            margin-bottom: 1rem;
+        }
+        hr {
+            border-top: 1px solid #4a5568;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="container mx-auto bg-gray-800 shadow-lg rounded-lg p-6 sm:p-8">
+        <h1 class="text-4xl font-extrabold text-center mb-6">Echoes of Eldoria: Game Compendium</h1>
+        <p class="text-center text-lg mb-8">
+            Welcome, adventurer, to the official Compendium for <strong class="text-purple-400">Echoes of Eldoria</strong>!
+            This guide is your essential companion for navigating the treacherous depths of the dungeon.
+            Here, you'll find detailed information about the creatures that lurk in the shadows,
+            the valuable items you can discover, and a breakdown of the challenges awaiting you on each floor.
+        </p>
+
+        <hr>
+
+        <h2 class="text-3xl font-bold mb-4">Enemies of the Dungeon</h2>
+        <p class="mb-4">Prepare to face a diverse array of foes. Understanding their strengths and weaknesses is key to your survival.</p>
+
+        <div class="overflow-x-auto rounded-lg shadow-md">
+            <table class="min-w-full bg-gray-700 rounded-lg">
+                <thead>
+                    <tr>
+                        <th class="py-3 px-4">Name</th>
+                        <th class="py-3 px-4">Symbol</th>
+                        <th class="py-3 px-4">Color (FG)</th>
+                        <th class="py-3 px-4">Health</th>
+                        <th class="py-3 px-4">Damage</th>
+                        <th class="py-3 px-4">First Appearance</th>
+                        <th class="py-3 px-4">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 px-4">Goblin</td>
+                        <td class="py-3 px-4">g</td>
+                        <td class="py-3 px-4">RGB(255,165,0)</td>
+                        <td class="py-3 px-4">15</td>
+                        <td class="py-3 px-4">3</td>
+                        <td class="py-3 px-4">Level 1</td>
+                        <td class="py-3 px-4">Small, agile, and often found in groups. Easy to defeat individually.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Slime</td>
+                        <td class="py-3 px-4">s</td>
+                        <td class="py-3 px-4">RGB(0,255,255)</td>
+                        <td class="py-3 px-4">10</td>
+                        <td class="py-3 px-4">2</td>
+                        <td class="py-3 px-4">Level 1</td>
+                        <td class="py-3 px-4">Slow-moving, but can be surprisingly resilient. Watch out for their acidic touch.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Giant Rat</td>
+                        <td class="py-3 px-4">r</td>
+                        <td class="py-3 px-4">RGB(100,100,100)</td>
+                        <td class="py-3 px-4">10</td>
+                        <td class="py-3 px-4">2</td>
+                        <td class="py-3 px-4">Level 1</td>
+                        <td class="py-3 px-4">Fast and numerous, a nuisance in early levels. Can swarm unwary adventurers.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Orc</td>
+                        <td class="py-3 px-4">O</td>
+                        <td class="py-3 px-4">RGB(0,128,0)</td>
+                        <td class="py-3 px-4">25</td>
+                        <td class="py-3 px-4">6</td>
+                        <td class="py-3 px-4">Level 2</td>
+                        <td class="py-3 px-4">Stronger than goblins, a more direct threat. Wields crude but effective weapons.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Skeleton</td>
+                        <td class="py-3 px-4">S</td>
+                        <td class="py-3 px-4">RGB(200,200,200)</td>
+                        <td class="py-3 px-4">20</td>
+                        <td class="py-3 px-4">4</td>
+                        <td class="py-3 px-4">Level 2</td>
+                        <td class="py-3 px-4">Reanimated warriors, surprisingly quick for bones. Often found in old crypts.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Zombie</td>
+                        <td class="py-3 px-4">Z</td>
+                        <td class="py-3 px-4">RGB(100,150,80)</td>
+                        <td class="py-3 px-4">30</td>
+                        <td class="py-3 px-4">5</td>
+                        <td class="py-3 px-4">Level 3</td>
+                        <td class="py-3 px-4">Slow but tough, can overwhelm adventurers with sheer numbers. Beware their decaying touch.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Spider</td>
+                        <td class="py-3 px-4">8</td>
+                        <td class="py-3 px-4">RGB(150,0,150)</td>
+                        <td class="py-3 px-4">12</td>
+                        <td class="py-3 px-4">3</td>
+                        <td class="py-3 px-4">Level 3</td>
+                        <td class="py-3 px-4">Quick and venomous, best dealt with swiftly before they can poison you.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Wolf</td>
+                        <td class="py-3 px-4">w</td>
+                        <td class="py-3 px-4">RGB(120,80,50)</td>
+                        <td class="py-3 px-4">18</td>
+                        <td class="py-3 px-4">4</td>
+                        <td class="py-3 px-4">Level 4</td>
+                        <td class="py-3 px-4">Agile hunters, they often attack in packs. Their bites can be surprisingly painful.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Bandit</td>
+                        <td class="py-3 px-4">b</td>
+                        <td class="py-3 px-4">RGB(180,100,0)</td>
+                        <td class="py-3 px-4">22</td>
+                        <td class="py-3 px-4">5</td>
+                        <td class="py-3 px-4">Level 4</td>
+                        <td class="py-3 px-4">Human foes, cunning and equipped for combat. They might try to outmaneuver you.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Ogre</td>
+                        <td class="py-3 px-4">G</td>
+                        <td class="py-3 px-4">RGB(100,150,0)</td>
+                        <td class="py-3 px-4">40</td>
+                        <td class="py-3 px-4">8</td>
+                        <td class="py-3 px-4">Level 5</td>
+                        <td class="py-3 px-4">Large and powerful, hits very hard. A formidable opponent that requires careful strategy.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Ghost</td>
+                        <td class="py-3 px-4">h</td>
+                        <td class="py-3 px-4">RGB(220,220,255)</td>
+                        <td class="py-3 px-4">1</td>
+                        <td class="py-3 px-4">7</td>
+                        <td class="py-3 px-4">Level 5</td>
+                        <td class="py-3 px-4">Ethereal beings, difficult to hit with physical attacks. Weak to magical attacks.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Bat</td>
+                        <td class="py-3 px-4">B</td>
+                        <td class="py-3 px-4">RGB(100,100,100)</td>
+                        <td class="py-3 px-4">8</td>
+                        <td class="py-3 px-4">2</td>
+                        <td class="py-3 px-4">Level 5</td>
+                        <td class="py-3 px-4">Small and fast, often found in swarms. Can be annoying but are generally weak.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Dragon</td>
+                        <td class="py-3 px-4">D</td>
+                        <td class="py-3 px-4">RGB(255,60,0)</td>
+                        <td class="py-3 px-4">80</td>
+                        <td class="py-3 px-4">15</td>
+                        <td class="py-3 px-4">Level 6</td>
+                        <td class="py-3 px-4">The most powerful foe. High health and devastating attacks. Approach with extreme caution!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2 class="text-3xl font-bold mb-4">Items of the Dungeon</h2>
+        <p class="mb-4">Discover the various items scattered throughout the dungeon, their symbols, colors, effects, and where you might first find them.</p>
+
+        <div class="overflow-x-auto rounded-lg shadow-md">
+            <table class="min-w-full bg-gray-700 rounded-lg">
+                <thead>
+                    <tr>
+                        <th class="py-3 px-4">Name</th>
+                        <th class="py-3 px-4">Symbol</th>
+                        <th class="py-3 px-4">Color (FG)</th>
+                        <th class="py-3 px-4">Effect Type</th>
+                        <th class="py-3 px-4">Effect Value</th>
+                        <th class="py-3 px-4">First Appearance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 px-4">Health Potion I</td>
+                        <td class="py-3 px-4">!</td>
+                        <td class="py-3 px-4">RGB(255,0,0)</td>
+                        <td class="py-3 px-4">heal</td>
+                        <td class="py-3 px-4">30</td>
+                        <td class="py-3 px-4">Level 1</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Mana Potion</td>
+                        <td class="py-3 px-4">!</td>
+                        <td class="py-3 px-4">RGB(0,0,255)</td>
+                        <td class="py-3 px-4">mana_restore</td>
+                        <td class="py-3 px-4">20</td>
+                        <td class="py-3 px-4">Level 1</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Health Potion II</td>
+                        <td class="py-3 px-4">!</td>
+                        <td class="py-3 px-4">RGB(255,128,0)</td>
+                        <td class="py-3 px-4">heal</td>
+                        <td class="py-3 px-4">50</td>
+                        <td class="py-3 px-4">Level 2</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Strength Potion</td>
+                        <td class="py-3 px-4">P</td>
+                        <td class="py-3 px-4">RGB(139,69,19)</td>
+                        <td class="py-3 px-4">strength_boost</td>
+                        <td class="py-3 px-4">2</td>
+                        <td class="py-3 px-4">Level 2</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Defense Potion</td>
+                        <td class="py-3 px-4">P</td>
+                        <td class="py-3 px-4">RGB(100,100,100)</td>
+                        <td class="py-3 px-4">defense_boost</td>
+                        <td class="py-3 px-4">1</td>
+                        <td class="py-3 px-4">Level 3</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Scroll of Fireball</td>
+                        <td class="py-3 px-4">~</td>
+                        <td class="py-3 px-4">RGB(255,69,0)</td>
+                        <td class="py-3 px-4">spell_fireball</td>
+                        <td class="py-3 px-4">15</td>
+                        <td class="py-3 px-4">Level 3</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Health Potion III</td>
+                        <td class="py-3 px-4">!</td>
+                        <td class="py-3 px-4">RGB(255,255,0)</td>
+                        <td class="py-3 px-4">heal</td>
+                        <td class="py-3 px-4">100</td>
+                        <td class="py-3 px-4">Level 4</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Speed Potion</td>
+                        <td class="py-3 px-4">P</td>
+                        <td class="py-3 px-4">RGB(255,255,255)</td>
+                        <td class="py-3 px-4">speed_boost</td>
+                        <td class="py-3 px-4">1</td>
+                        <td class="py-3 px-4">Level 4</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Gold Coin</td>
+                        <td class="py-3 px-4">$</td>
+                        <td class="py-3 px-4">RGB(255,223,0)</td>
+                        <td class="py-3 px-4">add_gold</td>
+                        <td class="py-3 px-4">10</td>
+                        <td class="py-3 px-4">Level 4</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Antidote</td>
+                        <td class="py-3 px-4">o</td>
+                        <td class="py-3 px-4">RGB(0,200,0)</td>
+                        <td class="py-3 px-4">cure_poison</td>
+                        <td class="py-3 px-4">0</td>
+                        <td class="py-3 px-4">Level 5</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Scroll of Teleportation</td>
+                        <td class="py-3 px-4">~</td>
+                        <td class="py-3 px-4">RGB(138,43,226)</td>
+                        <td class="py-3 px-4">spell_teleport</td>
+                        <td class="py-3 px-4">0</td>
+                        <td class="py-3 px-4">Level 5</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Minor Healing Salve</td>
+                        <td class="py-3 px-4">+</td>
+                        <td class="py-3 px-4">RGB(255,160,122)</td>
+                        <td class="py-3 px-4">heal</td>
+                        <td class="py-3 px-4">5</td>
+                        <td class="py-3 px-4">(Not in generate.json yet)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Key</td>
+                        <td class="py-3 px-4">k</td>
+                        <td class="py-3 px-4">RGB(255,215,0)</td>
+                        <td class="py-3 px-4">unlock_door</td>
+                        <td class="py-3 px-4">0</td>
+                        <td class="py-3 px-4">(Not in generate.json yet)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-sm mt-4 italic">*Note: Effect values for spells (Fireball, Teleportation) are typically their mana cost.</p>
+
+        <hr>
+
+        <h2 class="text-3xl font-bold mb-4">Dungeon Floors Overview</h2>
+        <p class="mb-4">Explore the different levels of the dungeon, each with its unique set of challenges and rewards.</p>
+
+        <div class="space-y-6">
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 1</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Easy</li>
+                    <li><strong>Contains Enemies:</strong> Goblin, Slime, Giant Rat</li>
+                    <li><strong>Contains Items:</strong> Health Potion I, Mana Potion</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 2</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Moderate</li>
+                    <li><strong>Contains Enemies:</strong> Goblin, Orc, Skeleton, Slime</li>
+                    <li><strong>Contains Items:</strong> Health Potion I, Health Potion II, Strength Potion</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 3</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Moderate to Challenging</li>
+                    <li><strong>Contains Enemies:</strong> Orc, Zombie, Spider, Goblin</li>
+                    <li><strong>Contains Items:</strong> Health Potion II, Defense Potion, Scroll of Fireball</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 4</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Challenging</li>
+                    <li><strong>Contains Enemies:</strong> Wolf, Bandit, Skeleton</li>
+                    <li><strong>Contains Items:</strong> Health Potion II, Health Potion III, Speed Potion, Gold Coin</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 5</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Significantly Challenging</li>
+                    <li><strong>Contains Enemies:</strong> Ogre, Ghost, Orc, Bat</li>
+                    <li><strong>Contains Items:</strong> Health Potion III, Mana Potion, Antidote, Scroll of Teleportation</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 6</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Very Challenging (First Dragon Encounter!)</li>
+                    <li><strong>Contains Enemies:</strong> Dragon, Ogre, Zombie</li>
+                    <li><strong>Contains Items:</strong> Health Potion III, Strength Potion, Defense Potion, Gold Coin</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 7</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> High Challenge</li>
+                    <li><strong>Contains Enemies:</strong> Ghost, Bandit, Spider</li>
+                    <li><strong>Contains Items:</strong> Health Potion III, Mana Potion, Scroll of Fireball, Gold Coin</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 8</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> High Challenge</li>
+                    <li><strong>Contains Enemies:</strong> Ogre, Wolf, Skeleton</li>
+                    <li><strong>Contains Items:</strong> Health Potion III, Strength Potion, Defense Potion, Scroll of Teleportation</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 9</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Elite Challenge</li>
+                    <li><strong>Contains Enemies:</strong> Dragon, Ghost, Ogre, Zombie</li>
+                    <li><strong>Contains Items:</strong> Health Potion III, Mana Potion, Antidote, Gold Coin</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-2">Level 10</h3>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Overall Difficulty Aim:</strong> Ultimate Challenge</li>
+                    <li><strong>Contains Enemies:</strong> Dragon, Ogre, Ghost</li>
+                    <li><strong>Contains Items:</strong> Health Potion III, Strength Potion, Defense Potion, Scroll of Fireball, Scroll of Teleportation, Gold Coin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
